@@ -2,7 +2,6 @@
   <% if pessoa.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(pessoa.errors.count, "error") %> prohibited this pessoa from being saved:</h2>
-
       <ul>
         <% pessoa.errors.each do |error| %>
           <li><%= error.full_message %></li>
